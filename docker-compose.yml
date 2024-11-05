@@ -1,0 +1,13 @@
+services:
+  halotone2mqtt:
+    container_name: halotone2mqtt-container
+    restart: always
+    image: halotone2mqtt:latest
+    environment:
+      printerip: "<x>.<x>.<x>.<x>"
+      printerpass: "<password>" # Printer password set on the device via touchscreen
+      mqtt_topic: "creality/halotone"
+      mqtt_user: "admin"
+      mqtt_password: "<password>"
+      mqtt_ip: "192.168.1.1"
+      mqtt_port: 1883
