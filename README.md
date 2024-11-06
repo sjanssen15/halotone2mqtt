@@ -1,5 +1,11 @@
-# halotone2mqtt
+# Halotone2mqtt
 I created this Docker container in order to poll the Creality Halot One 3D resin printer and sent this data to a MQTT topic. You are able to use this data in Home Assistant to have an actual state of the device while printing. Right now the only solution is to use Creality their Cloud service & app.
+
+# Credits
+Thanks to @danielkucera for his work in figuring out the authentication used for the Halot One printer websocket.
+https://github.com/danielkucera/creality-remote-control
+
+To test your printer before using this container, try https://halot.gh.danman.eu/. This will let you know if the set password & wifi connection are working.
 
 # Requirements
 ## Printer setup - Creality Halot One
